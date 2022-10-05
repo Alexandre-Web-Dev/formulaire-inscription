@@ -1,0 +1,57 @@
+#carouselExampleIndicators {
+  max-height: 350px;
+  overflow: hidden;
+}
+
+h1 {
+  text-align: center;
+  margin: 50px;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  padding: 5% 11%;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin: 0 0 20px;
+  width: 38vw;
+  padding: 10px;
+  border-radius: 3px;
+  border: none;
+  font-size: 15px;
+  background-color: #e6e6e6;
+}
+
+select {
+  margin: 0 0 20px;
+  width: 38vw;
+  padding: 12px;
+  border-radius: 3px;
+  border: none;
+  font-size: 15px;
+  background-color: #e6e6e6;
+  cursor: pointer;
+}
+
+#btn-inscription {
+  margin: 0 0 20px;
+  width: 38vw;
+  padding: 10px;
+  border-radius: 3px;
+  border: none;
+  font-size: 15px;
+  background-color: #fd4a5a;
+  color: white;
+  cursor: pointer;
+}
+
+#btn-inscription:hover {
+  background-color: #ed3645;
+}

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+
+    <!-- own style -->
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/d90092c470.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Evaluation JavaScript</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-ride="carousel"
+          >
+            <ol class="carousel-indicators">
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="1"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="2"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="3"
+              ></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="img/image1.jpg"
+                  class="d-block w-100"
+                  alt="image ville"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="img/image2.jpg"
+                  class="d-block w-100"
+                  alt="image ville"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="img/image3.jpg"
+                  class="d-block w-100"
+                  alt="image ville"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="img/image4.jpg"
+                  class="d-block w-100"
+                  alt="image ville"
+                />
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev"
+              href="#carouselExampleIndicators"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#carouselExampleIndicators"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!--ICI VOTRE FORMULAIRE-->
+    </div>
+
+    <h1>
+      <i class="fa-solid fa-arrow-right-to-bracket" style="color: #027bff"></i>
+      Inscription
+    </h1>
+
+    <section>
+      <div class="left flex">
+        <label for="pseudo"
+          ><i class="fa-solid fa-user" style="color: #027bff"></i>
+          Pseudo*</label
+        >
+        <span id="pseudo-manquant"></span>
+        <input
+          type="text"
+          name="pseudo"
+          id="pseudo"
+          minlength="8"
+          maxlength="14"
+          required
+        />
+
+        <label for="mdp"
+          ><i class="fa-solid fa-lock" style="color: #027bff"></i></i> Mot de
+          passe*</label
+        >
+        <span id="mdp-manquant"></span>
+        <input type="password" name="mdp" id="mdp" required />
+
+        <label for="confirmation-mdp">
+          <i class="fa-solid fa-eye-slash" style="color: #027bff"></i>
+          Confirmation du mot de passe*</label
+        >
+        <span id="confirmation-mdp-manquant"></span>
+        <input
+          type="password"
+          name="confirmation-mdp"
+          id="confirmation-mdp"
+          required
+        />
+
+        <label for="nom"
+          ><i class="fa-solid fa-user" style="color: #027bff"></i> Nom*
+        </label>
+        <span id="nom-manquant"></span>
+        <input type="text" name="nom" id="nom" maxlength="20" required />
+
+        <label for="prenom"
+          ><i class="fa-solid fa-user" style="color: #027bff"></i>
+          Prénom*</label
+        >
+        <span id="prenom-manquant"></span>
+        <input type="text" name="prenom" id="prenom" required />
+
+        <label for="email"
+          ><i class="fa-solid fa-envelope" style="color: #027bff"></i>
+          Email*</label
+        >
+        <span id="email-manquant"></span>
+        <input type="text" name="email" id="email" required />
+      </div>
+
+      <div class="right flex">
+        <label for="sexe"
+          ><i class="fa-solid fa-person" style="color: #027bff"></i>
+          <i class="fa-solid fa-person-dress" style="color: #027bff"></i>
+          Sexe</label
+        >
+        <select name="sexe" id="sexe">
+          <option value="homme">Homme</option>
+          <option value="femme">Femme</option>
+        </select>
+
+        <label for="adresse"
+          ><i class="fa-solid fa-house" style="color: #027bff"></i>
+          Adresse*</label
+        >
+        <span id="adresse-manquant"></span>
+        <input type="text" name="adresse" id="adresse" required />
+
+        <label for="code-postal"
+          ><i class="fa-solid fa-house" style="color: #027bff"></i> Code
+          postal*</label
+        >
+        <span id="code-postal-manquant"></span>
+        <input
+          type="text"
+          name="code-postal"
+          id="code-postal"
+          maxlength="5"
+          required
+        />
+
+        <label for="ville"
+          ><i class="fa-solid fa-city" style="color: #027bff"></i> Ville*</label
+        >
+        <span id="ville-manquant"></span>
+        <input type="text" name="ville" id="ville" required />
+
+        <label for="tel"
+          ><i class="fa-solid fa-phone" style="color: #027bff"></i>
+          Téléphone*</label
+        >
+        <span id="tel-manquant"></span>
+        <input
+          type="tel"
+          name="tel"
+          id="tel"
+          maxlength="10"
+          placeholder="Format : 0102030405"
+          required
+        />
+        <label
+          ><i class="fa-solid fa-share-from-square" style="color: #027bff"></i></label>
+        <input type="submit" id="btn-inscription" value="Inscription" />
+      </div>
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Own js -->
+    <script src="./script.js"></script>
+  </body>
+</html>
